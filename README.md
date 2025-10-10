@@ -1,3 +1,20 @@
+# Pemrograman PHP & Laravel | SIB NF Academy
+
+Repository ini berisi kumpulan tugas-tugas dari course Pemrograman PHP & Laravel  SIB NF Academy.
+
+## Identitas
+- Nama: Firenze Higa Putra
+- Kampus: Sekolah Tinggi Teknologi Terpadu Nurul Fikri
+- NIM: 0110223014
+- ID NFA: FWD03008
+
+---
+
+> Dibuat untuk memenuhi tugas course Pemrograman PHP & Laravel  SIB NF Academy.
+
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
