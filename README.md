@@ -8,6 +8,18 @@ Repository ini berisi kumpulan tugas-tugas dari course Pemrograman PHP & Laravel
 - NIM: 0110223014
 - ID NFA: FWD03008
 
+## Daftar Pertemuan
+
+- **Pertemuan 1**: 13 Oktober 2025
+
+## Struktur Repo
+- Setiap tugas akan disimpan sesuai pertemuan.
+- File tugas pertemuan 1: Buatlah sistem MVC sederhana untuk menampilkan data array pada Model kemudian ditampilkan dengan view.
+
+ Tugas:
+- Buat tabel Genre dan Author.
+- Berikan masing-masing 5 data pada Model.
+
 ---
 
 > Dibuat untuk memenuhi tugas course Pemrograman PHP & Laravel  SIB NF Academy.
