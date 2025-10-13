@@ -1,6 +1,6 @@
-# Pemrograman PHP & Laravel | SIB NF Academy
+# Pemrograman PHP | SIB NF Academy
 
-Repository ini berisi kumpulan tugas-tugas dari course Pemrograman PHP & Laravel  SIB NF Academy.
+Repository ini berisi kumpulan tugas-tugas dari course Pemrograman PHP  SIB NF Academy.
 
 ## Identitas
 - Nama: Firenze Higa Putra
@@ -10,7 +10,7 @@ Repository ini berisi kumpulan tugas-tugas dari course Pemrograman PHP & Laravel
 
 ---
 
-> Dibuat untuk memenuhi tugas course Pemrograman PHP & Laravel  SIB NF Academy.
+> Dibuat untuk memenuhi tugas course Pemrograman PHP  SIB NF Academy.
 
 
 ---
