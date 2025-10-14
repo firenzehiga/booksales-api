@@ -11,14 +11,23 @@ Repository ini berisi kumpulan tugas-tugas dari course Pemrograman PHP & Laravel
 ## Daftar Pertemuan
 
 - **Pertemuan 1**: 13 Oktober 2025
+- **Pertemuan 2**: 14 Oktober 2025
 
 ## Struktur Repo
-- Setiap tugas akan disimpan sesuai pertemuan.
-- File tugas pertemuan 1: Buatlah sistem MVC sederhana untuk menampilkan data array pada Model kemudian ditampilkan dengan view.
+Setiap tugas akan disimpan sesuai pertemuan.
+- **File tugas pertemuan 1**: Buatlah sistem MVC sederhana untuk menampilkan data array pada Model kemudian ditampilkan dengan view.
 
  Tugas:
 - Buat tabel Genre dan Author.
 - Berikan masing-masing 5 data pada Model.
+
+---
+
+- **File tugas pertemuan 2**: Membuat Migration dan Seeder untuk tabel Books dan Authors.
+
+ Tugas:
+- Buat migration dan seeder untuk Books dan Author.
+- Berikan masing-masing 5 data dummy.
 
 ---
 
