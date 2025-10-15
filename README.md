@@ -12,6 +12,7 @@ Repository ini berisi kumpulan tugas-tugas dari course Pemrograman PHP & Laravel
 
 - **Pertemuan 1**: 13 Oktober 2025
 - **Pertemuan 2**: 14 Oktober 2025
+- **Pertemuan 3**: 15 Oktober 2025
 
 ## Struktur Repo
 Setiap tugas akan disimpan sesuai pertemuan.
@@ -28,6 +29,16 @@ Setiap tugas akan disimpan sesuai pertemuan.
  Tugas:
 - Buat migration dan seeder untuk Books dan Author.
 - Berikan masing-masing 5 data dummy.
+
+---
+
+---
+
+- **File tugas pertemuan 3**: Memindahkan routing ke routes/api.php dan perbarui controller untuk kirim data json.
+
+ Tugas:
+- Buat routing api dan perbarui controller untuk kirim data json.
+- Hapus file view.
 
 ---
 
