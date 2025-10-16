@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->decimal('price', 10, 2);
+            $table->integer('price');
             $table->integer('stock');
             $table->string('cover_photo');
-            $table->foreignId('author_id')->constrained('authors')->onDelete('cascade');
-            $table->foreignId('genre_id')->constrained('genres')->onDelete('cascade');
+            $table->unsignedBigInteger('author_id');
+            $table->unsignedBigInteger('genre_id');
             $table->timestamps();
         });
     }
