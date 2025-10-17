@@ -65,4 +65,101 @@ class GenreController extends Controller
             201
         );
     }
+
+
+    public function show(string $id)
+    {
+        $genre = Genre::find($id);
+
+        if (!$genre) {
+            return response()->json(
+                [
+                    'success' => false,
+                    'message' => 'Genre not found',
+                ],
+                404
+            );
+        }
+
+        return response()->json(
+            [
+                'success' => true,
+                'message' => 'Get genre details',
+                'data' => $genre,
+            ],
+            200
+        );
+    }
+
+    public function update(Request $request, string $id)
+    {
+        // 1. mencari data
+        $genre = Genre::find($id);
+        if (!$genre) {
+            return response()->json(
+                [
+                    'success' => false,
+                    'message' => 'Genre not found',
+                ],
+                404
+            );
+        }
+
+        // 2. validator
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:100',
+            'description' => 'required|string',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(
+                [
+                    'success' => false,
+                    'message' => $validator->errors(),
+                ],
+                422
+            );
+        }
+
+        // 3. siapkan data yang ingin diupdate
+        $data = [
+            'name' => $request->name,
+            'description' => $request->description,
+        ];
+
+        // 5. update data baru ke database
+        $genre->update($data);
+        return response()->json(
+            [
+                'success' => true,
+                'message' => 'Genre updated successfully',
+                'data' => $genre,
+            ],
+            200
+        );
+    }
+
+    public function destroy(string $id)
+    {
+        $genre = Genre::find($id);
+
+        if (!$genre) {
+            return response()->json(
+                [
+                    'success' => false,
+                    'message' => 'Genre not found',
+                ],
+                404
+            );
+        }
+        $genre->delete();
+
+        return response()->json(
+            [
+                'success' => true,
+                'message' => 'Genre deleted successfully',
+            ],
+            200
+        );
+    }
 }
