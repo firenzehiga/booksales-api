@@ -16,6 +16,7 @@ Repository ini berisi kumpulan tugas-tugas dari course Pemrograman PHP & Laravel
 - **Pertemuan 4**: 16 Oktober 2025
 - **Pertemuan 5**: 17 Oktober 2025
 - **Pertemuan 6**: 20 Oktober 2025
+- **Pertemuan 7**: 21 Oktober 2025
 
 ## Struktur Repo
 Setiap tugas akan disimpan sesuai pertemuan.
@@ -66,6 +67,16 @@ Setiap tugas akan disimpan sesuai pertemuan.
 - Buat register, login, logout dengan implementasi middleware dan JWT.
 - Mengatur ulang routing dengan middleware
 - Gunakan POSTMAN untuk melakukan testing aplikasi
+
+---
+
+- **File tugas pertemuan 7**: Membuat mvc untuk transactions, menambah foreignId pada transactions, dan books, lalu mengatur routing transactions.
+
+ Tugas:
+- Mengambil data dari relasi Model.
+- Mengatur relasi di migration dengan foreignId.
+- Create, Update, dan Show Transaction hanya dapat diakses oleh customer yang sudah melakukan autentikasi.
+- Read All dan Destroy hanya dapat diakses oleh admin.
 
 ---
 
