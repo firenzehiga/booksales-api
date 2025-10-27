@@ -33,14 +33,17 @@ class AuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
+            'role' => 'customer',
         ]);
         // 4. Cek keberhasilan
         if ($user) {
+            $token = auth()->guard('api')->login($user);
             return response()->json(
                 [
                     'success' => true,
                     'message' => 'User registered successfully',
-                    'data' => $user,
+                    'user' => $user,
+                    'token' => $token,
                 ],
                 201
             );
