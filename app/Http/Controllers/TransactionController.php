@@ -32,6 +32,34 @@ class TransactionController extends Controller
         );
     }
 
+    public function transaksiSaya()
+    {
+        $user = auth('api')->user();
+
+        $transactions = Transaction::with(['book'])
+            ->where('customer_id', $user->id)
+            ->get();
+
+        if ($transactions->isEmpty()) {
+            return response()->json(
+                [
+                    'success' => true,
+                    'message' => 'Resource data not found',
+                ],
+                200
+            );
+        }
+
+        return response()->json(
+            [
+                'success' => true,
+                'message' => 'Get my transactions',
+                'data' => $transactions,
+            ],
+            200
+        );
+    }
+
     public function store(Request $request)
     {
         // 1. validator
